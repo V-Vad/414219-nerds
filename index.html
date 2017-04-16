@@ -5,9 +5,187 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-  Надпись
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <div class="container">
+        <div class="header-top">
+          <div class="logo">
+            <img src="#" width="111" height="24" alt="Nerd's">
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#">Студия</a></li>
+              <li><a href="#">Клиенты</a></li>
+              <li><a href="#">Магазин</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="purchases">
+            <a href="#">Корзина</a>
+          </div>
+        </div>
+        <input type="radio" name="slideRadio" id="radio1">
+        <label for="radio1"></label>
+        <input type="radio" name="slideRadio" id="radio2">
+        <label for="radio2"></label>
+        <input type="radio" name="slideRadio" id="radio3">
+        <label for="radio3"></label>
+        <div class="header-slide">
+          <section class="slide1">
+            <div class="slide-info">
+              <h1>Долго, дорого, скрупулезно.</h1>
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+            </div>
+            <div class="more-info">
+              <a href="#">Узнать больше</a>
+            </div>
+            <div class="slide-img">
+              <img src="#" alt="слайд 1" height="431" width="760">
+            </div>
+          </section>
+          <section class="slide2">
+            <div class="slide-info">
+              <h1>Любим математику как никто другой.</h1>
+              <p>Никакого креатива, только математический формулы для расчета идеальный пропорций.</p>
+            </div>
+            <div class="more-info">
+              <a href="#">Узнать больше</a>
+            </div>
+            <div class="slide-img">
+              <img src="#" alt="слайд 2" height="431" width="760">
+            </div>
+          </section>
+          <section class="slide3">
+            <div class="slide-info">
+              <h1>Только ночь, только хардкор</h1>
+              <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            </div>
+            <div class="more-info">
+              <a href="#">Узнать больше</a>
+            </div>
+            <div class="slide-img">
+              <img src="#" alt="слайд 3" height="431" width="760">
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <section class="advantages">
+        <div class="feature">
+          <h2>Веб-сайты</h2>
+          <p>Мир никогда не будет прежним после того как увидит наш сайт</p>
+          <div class="item-order">
+            <a href="#" class="btn">Заказать</a>
+          </div>
+        </div>
+        <div class="feature">
+          <h2>Приложения</h2>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <div class="item-order">
+            <a href="#" class="btn">Заказать</a>
+          </div>
+        </div>
+        <div class="feature">
+          <h2>Презентации</h2>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <div class="item-order">
+            <a href="#" class="btn">Заказать</a>
+          </div>
+        </div>
+      </section>
+      <section class="about-us">
+        <div class="title"><h1>Мы &ndash; маленькая, но гордая дизайн-студия из Краснодара.</h1></div>
+        <div class="description"><p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы </p></div>
+        <div class="our work">
+        <h2>Выполняем заказы на разработку</h2>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильный приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="superiority">
+          <div class="logo">
+            <img src="#" alt="веселый nerd's" width="360" height="249">
+          </div>
+          <table>
+            <caption>C 2004 года любим точность во всем:</caption>
+            <tbody>
+              <tr class="value">
+                <td>146%</td>
+                <td>100%</td>
+                <td>50%</td>
+              </tr>
+              <tr class="service">
+                <td>Уровень самоотдачи</td>
+                <td>Соблюдение сроков</td>
+                <td>Минимальная предоплата</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="partners">
+        <div>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="имя партнера" width="200" height="68"></a>
+        </div>
+        <div>
+          <img src="#" alt="имя партнера" width="200" height="68">
+        </div>
+        <div>
+          <img src="#" alt="имя партнера" width="200" height="68">
+        </div>
+        <div>
+          <img src="#" alt="имя партнера" width="200" height="68">
+        </div>
+      </section>
+      <section class="our-location">
+        <div class="contacts">
+          <h2>Nerds design studio</h2>
+          <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br> тел. +7(812)275-75-75</p>
+          <div>
+            <button class="button">Напишите нам</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="#" alt="улица пушкина" width="1440" height="415">
+        </div>
+      </section>
+      <section class="write-us">
+        <form>
+          <fieldset>
+            <legend>Напишите нам</legend>
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Для отправки ответа">
+            <label for="letter">Текст письма:</label>
+            <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
+            <div class="buttons">
+              <button type="submit">Отправить</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <section class="footer-social">
+          <div class="social">
+            <a class="btn social-vk" href="#">вк</a>
+          </div>
+          <div class="social">
+            <a class="btn social-fb" href="#">фб</a>
+          </div>
+          <div class="social">
+            <a class="btn social-ig" href="#">иг</a>
+          </div>
+        </section>
+        <section class="footer-offering">
+          <h2>Давайте дружить, это выгожно!</h2>
+          <p> Скидка 10% для друзей из социальных сетей</p>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
