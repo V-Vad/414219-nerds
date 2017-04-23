@@ -1,6 +1,10 @@
+html,
 body {
 	font-size: 16px;
-	font-family: "Roboto"
+	font-family: "Roboto";
+	background-color: grey;
+	margin: 0;
+	padding: 0;
 }
 .main-title {
 	font-size: 55px;
@@ -25,4 +29,155 @@ body {
 .item-title a {
 	font-size: 18px;
 	line-height: 30px;
+}
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	background-color: pink;
+	padding: 0 10px;
+}
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* index */ 
+.slide2 {
+	display: none;
+}
+.slide3 {
+	display: none;
+}
+.main-header input[type="radio"] {
+	display: none;
+}
+.main-header {
+	background-color: yellow;
+	margin-bottom: 80px;
+}
+.header-logo {
+	float: left;
+	width: 160px;
+	background-color: red;
+	margin-right: 200px;
+}
+.main-nav {
+	float: left;
+	width: 600px;
+	background-color: green;
+}
+.main-nav li {
+	display: inline-block;
+}
+.purchases {
+	float: right;
+	background-color: brown;
+	width: 160px;
+}
+.header-slide {
+	background-color: purple;
+}
+.slide-info {
+	float: left;
+	background-color: red;
+}
+.slide-img {
+	float: right;
+	background-color: green;
+}
+.advantages {
+	background-color: red;
+	margin-bottom: 80px;
+}
+.feature {
+	float: left;
+	width: 300px;
+	margin-right: 100px;
+}
+.feature:last-child {
+	margin-right: 0;
+}
+.who-we-are {
+	background-color: red;
+	margin-bottom: 75px;
+}
+.about-us {
+	float: left;
+	width: 700px;
+	background-color: green;
+}
+.superiority {
+	float: right;
+	width: 360px;
+	background-color: brown;
+}
+.partners {
+	background-color: red;
+	margin-bottom: 125px;
+}
+.partners div {
+	float: left;
+}
+.contacts {
+	display: none;
+}
+.card {
+	background-color: brown;
+	margin: 0 -50px 0 -140px;
+	height: 416px;
+	width: 1440px;
+}
+.write-us {
+	display: none;
+}
+.main-footer {
+	margin-top: 70px;
+}
+.footer-social {
+	float: left;
+	width: 400px;
+}
+.footer-social .social {
+	display: inline-block;
+}
+.footer-offering {
+	float: left;
+}
+/* catalog */
+.catalog-header {
+	background-color: yellow;
+	height: 365px;
+	margin-bottom: 50px;
+}
+.header-top {
+	background: red;
+	margin-bottom: 80px;
+}
+.header-caption {
+	background-color: green;
+	text-align: center;
+}
+.item-filtration {
+	float: left;
+	width: 260px;
+}
+.item-sort * {
+	display: inline-block;
+}
+.column2 {
+	float: right;
+	width: 760px;
+	background-color: red;
+}
+.column2 .item {
+	display: inline-block;
+}
+.catalog-list li {
+	display: inline-block;
+}
+.catalog-item {
+	margin-bottom: 50px;
+}
+.item-discraption {
+	display: none;
 }

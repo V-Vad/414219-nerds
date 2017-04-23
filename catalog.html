@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин</title>
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
    <header class="catalog-header">
      <div class="container">
-       <div class="header-top">
-         <div class="logo">
+       <div class="header-top clearfix">
+         <div class="header-logo">
             <a href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Nerd's"></a>
          </div>
          <nav class="main-nav">
@@ -24,13 +25,13 @@
             <a href="#">Корзина</a>
          </div>
         </div>
-     </div>
-   </header>
-   <main>
-     <div class="caption">
+		<div class="header-caption">
           <h1 class="main-title">Магазин готовых шаблонов</h1>
      </div>
-     <div class="container">
+     </div>
+   </header>
+   <main class="container">
+	 <div class="items-catalog clearfix">
        <section class="item-filtration">
          <form action="#">
 		   <fieldset>
@@ -75,6 +76,7 @@
            <button type="submit">Показать</button>
          </form>
        </section>
+	   <div class="column2">
        <div class="item-sort">
          <b>Сортировать:</b>
          <ul>
@@ -153,6 +155,8 @@
            <li><a href="#" class="btn">Следующая</a></li>
          </ul>
        </nav>
+	   </div>
+	   </div>
        <section class="our-location">
         <div class="contacts">
           <h2 class="contact-title">Nerds design studio</h2>
@@ -162,7 +166,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="#" alt="улица пушкина" width="1440" height="415">
+          <img src="img/card.jpg" alt="улица пушкина" width="1440" height="416">
         </div>
       </section>
       <section class="write-us">
@@ -181,11 +185,10 @@
           </fieldset>
         </form>
       </section>
-     </div>
    </main>
-   <footer class="main-footer">
-      <div class="container">
-        <section class="footer-social">
+   <footer class="main-footer clearfix">
+      <div class="container clearfix">
+        <section class="footer-social clearfix">
           <div class="social">
             <a class="btn social-vk" href="#">вк</a>
           </div>

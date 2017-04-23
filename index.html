@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <div class="header-top">
-          <div class="logo">
+      <div class="container clearfix">
+        <div class="header-top clearfix">
+          <div class="header-logo">
             <img src="img/nerds-logo.png" width="160" height="65" alt="Nerd's">
           </div>
           <nav class="main-nav">
@@ -33,14 +34,13 @@
         <div class="header-slide">
           <section class="slide1">
             <div class="slide-info">
-              <h1 class="main-title">Долго, дорого, скрупулезно.</h1>
-              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-            </div>
-            <div class="more-info">
+              <h1 class="main-title">Долго, дорого,<br> скрупулезно.</h1>
+              <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
+			  <div class="more-info">
               <a href="#">Узнать больше</a>
+              </div>
             </div>
             <div class="slide-img">
-              <img src="img/slide1.png" alt="слайд 1" height="413" width="698">
             </div>
           </section>
           <section class="slide2">
@@ -52,7 +52,7 @@
               <a href="#">Узнать больше</a>
             </div>
             <div class="slide-img">
-              <img src="img/slide2.png"" alt="слайд 2" height="413" width="698">
+              <img src="img/slide2.png" alt="слайд2" height="413" width="698">
             </div>
           </section>
           <section class="slide3">
@@ -64,14 +64,14 @@
               <a href="#">Узнать больше</a>
             </div>
             <div class="slide-img">
-              <img src="img/slide3.png"" alt="слайд 3" height="413" width="698">
+              <img src="img/slide3.png" alt="слайд3" height="413" width="698">
             </div>
           </section>
         </div>
       </div>
     </header>
     <main class="container">
-      <section class="advantages">
+      <section class="advantages  clearfix">
         <div class="feature">
           <h2 class="feature-title">Веб-сайты</h2>
           <p>Мир никогда не будет прежним после того как увидит наш сайт</p>
@@ -94,18 +94,20 @@
           </div>
         </div>
       </section>
+	  <div class="who-we-are clearfix">
       <section class="about-us">
         <div class="title"><h1 class="us-title">Мы &ndash; маленькая, но гордая дизайн-студия из Краснодара.</h1></div>
         <div class="description"><p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы </p></div>
         <div class="our work">
-        <h2>Выполняем заказы на разработку</h2>
+          <h2>Выполняем заказы на разработку</h2>
           <ul>
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильный приложений для iOS и Android</li>
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div class="superiority">
+	  </section>
+        <section class="superiority">
           <div class="logo">
             <img src="img/nerds-illustration.png" alt="веселый nerd's" width="360" height="208">
           </div>
@@ -124,9 +126,9 @@
               </tr>
             </tbody>
           </table>
+		  </section>
         </div>
-      </section>
-      <section class="partners">
+      <section class="partners clearfix">
         <div>
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="имя партнера" width="200" height="68"></a>
         </div>
@@ -140,6 +142,7 @@
           <img src="#" alt="имя партнера" width="200" height="68">
         </div>
       </section>
+	  <div class="feedback">
       <section class="our-location">
         <div class="contacts">
           <h2 class="contact-title">Nerds design studio</h2>
@@ -168,9 +171,10 @@
           </fieldset>
         </form>
       </section>
+	  </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-social">
           <div class="social">
             <a class="btn social-vk" href="#">вк</a>
