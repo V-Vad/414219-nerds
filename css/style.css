@@ -30,6 +30,7 @@ body {
     background-color: #FB565A;
     border: none;
     cursor: pointer;
+		font-family: 'Roboto', Arial sans-serif;
 }
 .btn:hover,
 .btn:focus {
@@ -88,18 +89,20 @@ body {
     background-color: #E74246;
 }
 .popup .btn {
-    min-width: 220px;
+    padding: 16px 81px;
     outline: none;
 }
 .contacts .btn {
-    min-width: 220px;
     outline: none;
+		margin-top: 20px;
+		padding-left: 44px;
+		padding-right: 44px;
 }
 .social-btn {
     width: 80px;
     height: 78px;
     border-radius: 50%;
-    background: grey url(../img/spritesheet.png) no-repeat;
+    background: #E1E1E1 url(../img/spritesheet.png) no-repeat;
 }
 .social-btn:not(:last-child) {
     margin-right: 12px;
@@ -129,13 +132,13 @@ body {
 .btn.list-btn {
     background-color: #EEEEEE;
     color: #000000;
-    padding: 18px 21px;
+    padding: 16px 21px;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
 }
 .catalog-list .text {
-    padding: 18px 78px;
+    padding: 16px 78px;
 }
 .btn.list-btn:hover,
 .btn.list-btn:focus {
@@ -177,7 +180,7 @@ body {
     padding-top: 49px;
 }
 .header-logo {
-    margin-right: 200px;
+    margin-right: 202px;
 }
 .header-logo:hover,
 .header-logo:focus {
@@ -197,17 +200,25 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+		justify-content: flex-start;
+		align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
+		padding-top: 15px;
+		flex-wrap: wrap;
 }
 .main-nav li:not(:last-child) {
-    margin-right: 45px;
+    margin-right: 46px;
 }
 .purchases {
     width: 200px;
     text-align: right;
     margin-left: auto;
+		padding-top: 15px;
+		max-width:200px;
+		overflow: hidden;
+		
 }
 .purchases a {
     position: relative;
@@ -215,8 +226,8 @@ body {
 .purchases a::before {
     content: "";
     position: absolute;
-    top: 20%;
-    left: -35px;
+    top: 18%;
+    left: -40px;
     background: url(../img/spritesheet.png) no-repeat -773px -40px;
     width: 15px;
     height: 15px;
@@ -234,7 +245,7 @@ body {
     font-weight: 500;
 }
 .slide-text .slide-title {
-    padding-top: 75px;
+    padding-top: 77px;
     margin: 0;
     margin-bottom: 28px;
     max-width: 520px;
@@ -280,7 +291,7 @@ body {
 }
 .controls {
     position: absolute;
-    bottom: 87px;
+    bottom: 91px;
     left: 545px;
     z-index: 10;
 }
@@ -292,7 +303,7 @@ body {
     width: 18px;
     border-radius: 50%;
     background-color: white;
-    margin-right: 17px;
+    margin-right: 15px;
     position: relative;
 }
 #slide1:checked ~ .controls label[for="slide1"]::after,
@@ -365,6 +376,7 @@ body {
     margin: 0;
     padding: 0;
     margin-bottom: 32px;
+		max-width: 250px;
 }
 /* about-us*/
 
@@ -387,12 +399,12 @@ body {
 }
 .us-title {
     padding-top: 35px;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
 }
 .us-description p {
     margin: 0;
     padding: 0;
-    margin-bottom: 35px;
+    margin-bottom: 38px;
 }
 .our-work h2 {
     margin: 0;
@@ -426,12 +438,12 @@ body {
     width: 360px;
 }
 .column2 .logo {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 .service caption {
     text-transform: uppercase;
     font-weight: bold;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 .table-row1 td {
     font-size: 45px;
@@ -473,6 +485,9 @@ body {
     align-items: center;
     height: 87px;
 }
+.partner:first-of-type {
+	align-self: center;
+}
 .partner a {
     display: block;
     margin: 0 auto;
@@ -505,16 +520,27 @@ body {
 }
 .cards {
     position: relative;
-    background: url(../img/card.png) no-repeat 50%;
+    background: #E9E5DD url(../img/card.png) no-repeat 50%;
     min-width: 1440px;
     height: 413px;
     margin: 0 auto;
+}
+.cards::after {
+	content: "";
+	position: absolute;
+	top: 80px;
+	left: 1040px;
+	background: url(../img/spritesheet.png) no-repeat -1454px -40px;
+	width: 231px;
+  height: 190px;
+	z-index: 0;
 }
 .cards iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+		z-index: 1;
 }
 .our-location > .container {
     position: relative;
@@ -524,24 +550,28 @@ body {
     box-sizing: border-box;
     position: absolute;
     top: 50%;
-    left: 0;
-    min-width: 319px;
-    min-height: 308px;
+    left: 10px;
+    width: 319px;
+    height: 308px;
     background-color: #FFFFFF;
-    padding: 50px;
-    z-index: 1;
-    margin-top: 55px;
+    padding: 48px 50px 30px 50px;
+    z-index: 2;
+    margin-top: 50px;
 }
 .contact-title {
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
     text-transform: uppercase;
+		padding: 0;
+		margin: 0;
+		margin-bottom: 23px;
 }
 .contacts p {
     font-size: 16px;
     line-height: 18px;
     color: #666666;
+		margin-bottom: 18px;
 }
 .popup {
     display: none;
@@ -563,7 +593,7 @@ body {
 .popup legend {
     padding: 0;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
@@ -599,7 +629,8 @@ body {
 }
 .form-group label {
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 9px;
+		
 }
 .form-group input {
     width: 360px;
@@ -609,13 +640,18 @@ body {
     padding-left: 15px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+		font-family: 'Roboto', Arial sans-serif;
 }
 .form-group1 input {
     margin-right: 36px;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
 }
 .form-group input::-webkit-input-placeholder {
     font-size: 16px;
+    line-height: 18px;
+}
+.form-group input {
+		font-size: 16px;
     line-height: 18px;
 }
 .form-group input:-ms-input-placeholder {
@@ -625,6 +661,8 @@ body {
 .form-group input::placeholder {
     font-size: 16px;
     line-height: 18px;
+		color: #BABABA;
+		font-family: 'Roboto', Arial sans-serif;
 }
 .form-group1,
 .form-group2 {
@@ -633,12 +671,11 @@ body {
 }
 .form-group3 textarea {
     width: 760px;
-    height: 110px;
+    height: 118px;
     border: 2px solid #D7DCDE;
     resize: none;
-    margin-bottom: 47px;
-    padding-top: 15px;
-    padding-left: 15px;
+    margin-bottom: 40px;
+    padding: 12px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 5px/5px;
@@ -647,6 +684,11 @@ body {
     font-size: 16px;
     line-height: 18px;
 }
+.form-group3 textarea {
+		font-size: 16px;
+    line-height: 18px;
+		font-family: 'Roboto', Arial sans-serif;
+}
 .form-group3 textarea:-ms-input-placeholder {
     font-size: 16px;
     line-height: 18px;
@@ -654,6 +696,8 @@ body {
 .form-group3 textarea::placeholder {
     font-size: 16px;
     line-height: 18px;
+		color: #BABABA;
+		font-family: 'Roboto', Arial sans-serif;
 }
 .form-group input:focus,
 .form-group3 textarea:focus {
@@ -681,7 +725,7 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 70px;
     margin-bottom: 80px;
 }
 .footer-social {
@@ -713,16 +757,16 @@ body {
 .main-title {
     margin: 0;
     padding: 0;
-    margin-top: 85px;
+    margin-top: 80px;
     text-align: center;
-    padding-bottom: 101px;
+    padding-bottom: 106px;
 }
 .main-header.inside {
     margin-bottom: 56px;
 }
 .main-nav .active {
     -webkit-box-shadow: -8px 13px 0 -8px #FB565A, 8px 13px 0 -8px #FB565A;
-    box-shadow: -8px 13px 0 -8px #FB565A, 8px 13px 0 -8px #FB565A;
+    box-shadow: -8px 20px 0 -9px #FB565A, 8px 20px 0 -9px #FB565A, -8px 19px 0 -9px #FB565A, 8px 19px 0 -9px #FB565A;
 }
 /* main */
 
@@ -819,7 +863,7 @@ body {
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-bottom: 56px;
+    margin-bottom: 60px;
 }
 .catalog-item .item {
     width: 360px;
@@ -854,6 +898,7 @@ body {
     width: 20px;
     height: 23px;
     background: url(../img/spritesheet.png) no-repeat -2506px -40px;
+		cursor: pointer;
 }
 .toddler2 {
     position: absolute;
@@ -862,6 +907,7 @@ body {
     width: 20px;
     height: 23px;
     background: url(../img/spritesheet.png) no-repeat -2506px -40px;
+		cursor: pointer;
 }
 .price-range div {
     display: inline-block;
@@ -1012,6 +1058,8 @@ body {
     background-color: #EEEEEE;
     min-height: 230px;
     text-align: center;
+		max-height: 100%;
+		overflow: auto;
 }
 .item-title {
     margin: 0;
