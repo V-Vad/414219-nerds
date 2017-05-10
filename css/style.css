@@ -200,13 +200,18 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-		justify-content: flex-start;
-		align-items: center;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
 		padding-top: 15px;
-		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 }
 .main-nav li:not(:last-child) {
     margin-right: 46px;
@@ -486,7 +491,8 @@ body {
     height: 87px;
 }
 .partner:first-of-type {
-	align-self: center;
+	-ms-flex-item-align: center;
+	    align-self: center;
 }
 .partner a {
     display: block;
@@ -583,7 +589,8 @@ body {
     -webkit-transform: translateX(50%);
     transform: translateX(50%);
     background-color: #FFFFFF;
-		box-shadow:  0 12px 40px 0px #736565;
+		-webkit-box-shadow:  0 12px 40px 0px #736565;
+		        box-shadow:  0 12px 40px 0px #736565;
 }
 .popup fieldset {
     border: none;
@@ -658,6 +665,12 @@ body {
     font-size: 16px;
     line-height: 18px;
 }
+.form-group input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 18px;
+		color: #BABABA;
+		font-family: 'Roboto', Arial sans-serif;
+}
 .form-group input::placeholder {
     font-size: 16px;
     line-height: 18px;
@@ -692,6 +705,12 @@ body {
 .form-group3 textarea:-ms-input-placeholder {
     font-size: 16px;
     line-height: 18px;
+}
+.form-group3 textarea::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 18px;
+		color: #BABABA;
+		font-family: 'Roboto', Arial sans-serif;
 }
 .form-group3 textarea::placeholder {
     font-size: 16px;
