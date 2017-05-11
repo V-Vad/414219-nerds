@@ -469,10 +469,10 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-height: 184px;
+    padding: 50px 0;
     border-bottom: 2px solid #EEEEEE;
     border-top: 2px solid #EEEEEE;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -509,7 +509,8 @@ body {
 .partner:not(:last-child)::after {
     content: "";
     position: absolute;
-    bottom: 25%;
+    top: 50%;
+		transform: translateY(-50%);
     right: 0px;
     background: url(../img/spritesheet.png) no-repeat -1179px -40px;
     width: 2px;
@@ -644,7 +645,7 @@ body {
     height: 50px;
     border: 2px solid #D7DCDE;
     border-radius: 5px/5px;
-    padding-left: 15px;
+    padding: 13px 15px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 		font-family: 'Roboto', Arial sans-serif;
@@ -664,6 +665,8 @@ body {
 .form-group input:-ms-input-placeholder {
     font-size: 16px;
     line-height: 18px;
+		color: #BABABA;
+		font-family: 'Roboto', Arial sans-serif;
 }
 .form-group input::-webkit-input-placeholder {
     font-size: 16px;
@@ -676,6 +679,7 @@ body {
     line-height: 18px;
 		color: #BABABA;
 		font-family: 'Roboto', Arial sans-serif;
+		opacity: 1;
 }
 .form-group1,
 .form-group2 {
@@ -705,18 +709,24 @@ body {
 .form-group3 textarea:-ms-input-placeholder {
     font-size: 16px;
     line-height: 18px;
+		color: #BABABA;
+		opacity: 1;
+		font-family: 'Roboto', Arial sans-serif;
 }
 .form-group3 textarea::-webkit-input-placeholder {
     font-size: 16px;
     line-height: 18px;
 		color: #BABABA;
 		font-family: 'Roboto', Arial sans-serif;
+		opacity: 1;
 }
 .form-group3 textarea::placeholder {
     font-size: 16px;
     line-height: 18px;
 		color: #BABABA;
 		font-family: 'Roboto', Arial sans-serif;
+		opacity: 1;
+		
 }
 .form-group input:focus,
 .form-group3 textarea:focus {
@@ -734,6 +744,7 @@ body {
 .form-group input:focus::placeholder,
 .form-group3 textarea:focus::placeholder {
     color: #000000;
+		opacity: 1;
 }
 /* footer */
 
@@ -990,13 +1001,11 @@ body {
     border: 3px solid #4D4D4D;
     opacity: 0.4;
 }
-.radio-group label:hover::before,
-.radio-group label:focus::before {
+.radio-group label:hover::before {
     cursor: pointer;
     opacity: 1;
 }
-.radio-group input[type="radio"]:checked+label:hover::after,
-.radio-group input[type="radio"]:checked+label:focus::after {
+.radio-group input[type="radio"]:checked+label:hover::after {
     opacity: 1;
     cursor: pointer;
 }
@@ -1025,16 +1034,14 @@ body {
     border: 2px solid #4D4D4D;
     opacity: 0.4;
 }
-.checkbox-group label:hover::before,
-.checkbox-group label:focus::before {
+.checkbox-group label:hover::before {
     opacity: 1;
     cursor: pointer;
 }
 .checkbox-group input[type="checkbox"]:checked+label::before {
     display: none;
 }
-.checkbox-group input[type="checkbox"]:checked+label:hover::after,
-.checkbox-group input[type="checkbox"]:checked+label:focus::after {
+.checkbox-group input[type="checkbox"]:checked+label:hover::after {
     opacity: 1;
     cursor: pointer;
 }
@@ -1059,9 +1066,6 @@ body {
 }
 .radio-group input[type="radio"]:disabled+label::after {
     background-color: #EDEDED;
-}
-.checkbox-group input[type="checkbox"]:disabled+label::before {
-    border-color: #EDEDED;
 }
 .checkbox-group input[type="checkbox"]:disabled+label::after {
     opacity: 0.1;
@@ -1153,7 +1157,7 @@ body {
     margin-right: 9px;
 }
 .catalog-list {
-    margin-bottom: 60px;
+    margin-bottom: 63px;
 }
 .catalog-list ul {
     display: -webkit-box;
@@ -1182,17 +1186,17 @@ body {
     animation-fill-mode: forwards;
 }
 .form-group .modal-error {
-    border: 2px solid red;
-    color: red;
+    border-color: #E74246;
 }
-.modal-error::-webkit-input-placeholder {
-    color: red;
+.form-group .modal-error::-webkit-input-placeholder {
+    color: #E74246;
 }
-.modal-error:-ms-input-placeholder {
-    color: red;
+.form-group .modal-error:-ms-input-placeholder {
+    color: #E74246;
 }
-.modal-error::placeholder {
-    color: red;
+.form-group .modal-error::placeholder {
+    color: #E74246;
+		opacity: 1;
 }
 @-webkit-keyframes popup {
     0% {
